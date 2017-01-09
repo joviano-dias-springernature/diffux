@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+pushd "$DIR" >/dev/null 2>&1
+trap "{ popd >/dev/null 2>&1; }" EXIT
+
+redis-server --daemonize yes;
+
+cp config/database.yml.example config/database.yml;
+
+bundle exec rake db:setup
+
+bundle exec rails server && cd /home/dev/code;
