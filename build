@@ -9,13 +9,12 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd "$DIR" >/dev/null 2>&1
 trap "{ popd >/dev/null 2>&1; }" EXIT
 
-bundle install;
+#bundle install;
 
-redis-server --daemonize yes;
+#redis-server --daemonize yes;
 
-cp config/database.yml.example config/database.yml;
+#cp config/database.yml.example config/database.yml;
 
-bundle exec rake db:setup
+#bundle exec rake db:setup;
 
-export APP_ENV=${TARGET_ENVIRONMENT_NAME:-local}
-bundle exec rails server -b 0.0.0.0;
+#bundle exec rails server;

@@ -1,8 +1,10 @@
 code:
-  image: fig-env_java-8_ruby_bundler-diffux
-#  build: .
-  dns: *DNS
-  volumes:
-    - .:/home/dev/code
+#  image: fig-env_java-8_ruby_bundler_diffux-base
+  image: diffux
+#  dns: *DNS
+#  volumes:
+#    - .:/home/dev/code
   ports:
     - 3000:3000
+  expose:
+    - 3000
