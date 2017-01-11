@@ -1,8 +1,9 @@
-cf-username: springerqa@googlegroups.com
 ci-server-host: te-prod-go-01.springer-sbm.com
 environment-groups:
 - name: dev
   cf-diego-enabled: true
+  automatic-approval: true
 go-pipeline-group: sciam.qa
 language: ruby
+cf-username: springerqa@googlegroups.com
 require-hook-files: true
