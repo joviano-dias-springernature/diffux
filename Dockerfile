@@ -22,6 +22,3 @@ RUN cp config/database.yml.example config/database.yml
 
 # Set up dbs
 RUN bundle exec rake db:setup
-
-# Start webapp
-CMD bundle exec rails server
