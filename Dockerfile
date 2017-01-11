@@ -1,4 +1,4 @@
-FROM fig-env_java-8_ruby_bundler_diffux-base
+FROM te-docker.docker-registry.tools.springer-sbm.com/fig-env_java-8_ruby_bundler_diffux-base
 
 MAINTAINER Springer Nature QA <springerqa@googlegroups.com>
 
