@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby File.read(".ruby-version").strip
+
 gem 'rails', '4.2.1'
 
 gem 'bootstrap-sass', '~> 3.3.0'
