@@ -5,5 +5,5 @@ environment-groups:
   automatic-approval: true
 go-pipeline-group: sciam.qa
 language: ruby
-cf-username: springerqa@googlegroups.com
+cf-username: bigbird@groups.springer.com
 require-hook-files: true
