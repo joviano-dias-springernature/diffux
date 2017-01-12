@@ -10,4 +10,4 @@ pushd "$DIR" >/dev/null 2>&1
 trap "{ popd >/dev/null 2>&1; }" EXIT
 
 PROJECT_NAME="$(basename ${DIR})"
-./docker-env -d $PROJECT_NAME -c bash -c "chmod +x build; ./build; bundle exec rails server"
+./docker-env -d $PROJECT_NAME -c bash -c "chmod +x build; ./build; redis-server --daemonize yes; bundle exec rails server"
