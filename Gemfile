@@ -13,6 +13,11 @@ gem 'rails-i18n', '~> 4.0.0'
 gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq
 gem 'turbolinks'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'flamegraph'
+gem 'spring'
+gem 'sqlite3'
 
 group :assets do
   gem 'autoprefixer-rails'
@@ -30,14 +35,6 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'poltergeist'
-end
-
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'flamegraph'
-  gem 'spring'
-  gem 'sqlite3'
 end
 
 group :production do
