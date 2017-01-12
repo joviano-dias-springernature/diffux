@@ -9,6 +9,6 @@ class InternalController < ApplicationController
     end
 
     def version
-        render :json => { "revision": "GIT_REVISION" }, :status => 200
+        render :json => { "revision": "HEAD" }, :status => 200
     end
 end
