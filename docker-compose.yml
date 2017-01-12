@@ -7,7 +7,7 @@ code:
     - 3000:3000
 
 deploy:
-  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env-deploy-to-cf
+  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env-deploy-to-cf-java8-ruby
   dns: *DNS
   volumes:
     - .:/home/dev/code
