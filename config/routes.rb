@@ -3,7 +3,9 @@ require 'sidekiq/web'
 Diffux::Application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
 
+  get 'internal/config' => 'internal#config_impl'
   get 'internal/status' => 'internal#status'
+  get 'internal/version' => 'internal#version'
 
   scope '(:locale)', locale: /en|es/,
                      defaults: { locale: I18n.default_locale } do
