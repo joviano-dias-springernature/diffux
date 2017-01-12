@@ -320,3 +320,9 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.0.3)
   unicorn
+
+RUBY VERSION
+   ruby 2.2.4p230
+
+BUNDLED WITH
+   1.13.7

@@ -1,5 +1,4 @@
 ---
 applications:
-- name: diffux
-  memory: 256M
+- memory: 256M
   instances: 1
