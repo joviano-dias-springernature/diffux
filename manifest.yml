@@ -3,5 +3,3 @@ applications:
 - name: diffux
   memory: 256M
   instances: 1
-  env:
-    RAILS_ENV: development
