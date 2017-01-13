@@ -2,6 +2,8 @@
 applications:
 - memory: 256M
   instances: 1
+  env:
+      PHANTOMJS_PATH: /app/vendor/phantomjs/bin/phantomjs
 
 services:
     - diffux-redis
