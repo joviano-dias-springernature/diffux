@@ -3,7 +3,9 @@ applications:
 - memory: 256M
   instances: 1
   env:
+      DATABASE_URL: postgresql://admin:fotmuhtdxv@10.230.32.216:5432/
       PHANTOMJS_PATH: /app/vendor/phantomjs/bin/phantomjs
+      REDISCLOUD_URL: redis://10.230.34.75:6379
 
 services:
     - diffux-postgres

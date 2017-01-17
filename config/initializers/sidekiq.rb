@@ -1,4 +1,4 @@
-ENV['REDISCLOUD_URL'] ||= 'redis://10.230.34.75:6379'
+ENV['REDISCLOUD_URL'] ||= 'redis://localhost:6379'
 
 Sidekiq.configure_server do |config|
   config.redis = { url: ENV['REDISCLOUD_URL'], namespace: 'diffux' }
