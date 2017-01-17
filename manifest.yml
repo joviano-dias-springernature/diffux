@@ -6,4 +6,5 @@ applications:
       PHANTOMJS_PATH: /app/vendor/phantomjs/bin/phantomjs
 
 services:
+    - diffux-postgres
     - diffux-redis
