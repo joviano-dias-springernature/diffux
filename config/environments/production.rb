@@ -2,14 +2,12 @@ Diffux::Application.configure do
   # Settings specified here will take precedence over those in
   # config/application.rb
 
-  # In the development environment your application's code is reloaded on
-  # every request. This slows down response time but is perfect for development
-  # since you don't have to restart the web server when you make code changes.
-  config.cache_classes = false
+  # Code is not reloaded between requests
+  config.cache_classes = true
 
-  # Show full error reports and disable caching
-  config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
+  # Full error reports are disabled and caching is turned on
+  config.consider_all_requests_local       = false
+  config.action_controller.perform_caching = true
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
@@ -39,5 +37,15 @@ Diffux::Application.configure do
 
   # If config.eager_load is true, runs the config.before_eager_load hooks and
   # then calls eager_load! which will load all config.eager_load_namespaces.
-  config.eager_load = false
+  config.eager_load = true
+
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_host_name: ENV['AWS_HOST_NAME'],
+    s3_credentials: {
+        bucket: ENV['AWS_BUCKET_NAME'],
+        access_key_id: ENV['AWS_ACCESS_KEY'],
+        secret_access_key: ENV['AWS_SECRET_KEY']
+    }
+  }
 end

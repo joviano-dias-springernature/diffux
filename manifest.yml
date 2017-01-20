@@ -3,8 +3,12 @@ applications:
 - memory: 256M
   instances: 1
   env:
-      PHANTOMJS_PATH: /app/vendor/phantomjs/bin/phantomjs
       REDISCLOUD_URL: redis://10.230.34.75:6379
+      AWS_HOST_NAME: s3-eu-central-1.amazonaws.com
+      AWS_BUCKET_NAME: s3-service-broker-dev-db1e817b-cd04-4121-8484-55dd209a0b4d
+      AWS_SECRET_KEY: KyNf6xBiPiHYO/N2wBtRvLUkkVV6qchprsrygpt0
+      AWS_ACCESS_KEY: AKIAIQQBKI2PMZ4GYABQ
 
 services:
     - diffux-redis
+    - diffux-s3
