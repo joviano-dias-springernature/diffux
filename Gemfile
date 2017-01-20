@@ -40,5 +40,5 @@ end
 group :production do
   gem 'unicorn'
   gem 'rails_12factor'
-  gem 'aws-sdk'
+  gem 'aws-sdk', '< 2.0'
 end
