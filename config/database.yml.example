@@ -4,10 +4,6 @@ development:
   adapter: sqlite3
   database: db/development.sqlite3
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  password: bgzbvuviof
-  pool: 25
-  username: admin
-  database: diffux
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
