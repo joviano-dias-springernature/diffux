@@ -4,6 +4,10 @@ development:
   adapter: sqlite3
   database: db/development.sqlite3
 
-development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+production:
+  adapter: postgresql
+  host: 10.230.32.221
+  port: 5432
+  database: postgres
+  username: admin
+  password: ujatdnudvw
