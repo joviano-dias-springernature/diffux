@@ -10,5 +10,6 @@ applications:
       AWS_ACCESS_KEY: AKIAIQQBKI2PMZ4GYABQ
 
 services:
+    - diffux-postgres
     - diffux-redis
     - diffux-s3
