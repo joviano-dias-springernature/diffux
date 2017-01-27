@@ -5,7 +5,7 @@ code:
     - .:/home/dev/code
 
 deploy:
-  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env-deploy-to-cf-java8-ruby
+  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env_java-8_ruby_bundler_diffux-base
   dns: *DNS
   volumes:
     - .:/home/dev/code

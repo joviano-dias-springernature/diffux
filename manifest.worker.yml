@@ -7,7 +7,6 @@ applications:
     health-check-type: none
     command: bundle exec sidekiq -C ./config/sidekiq.yml
     env:
-      PHANTOMJS_PATH: /home/vcap/app/vendor/bundle/ruby/2.3.0/gems
       REDISCLOUD_URL: redis://10.230.34.75:6379
       AWS_HOST_NAME: s3-eu-central-1.amazonaws.com
       AWS_BUCKET_NAME: s3-service-broker-dev-db1e817b-cd04-4121-8484-55dd209a0b4d
