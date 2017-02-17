@@ -3,6 +3,7 @@ bundle install
 PHANTOM_JS_VERSION=1.9.8-linux-x86_64
 curl -sSL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOM_JS_VERSION.tar.bz2 | tar xjC /
 mkdir -p .phantomjs/$PHANTOM_JS_VERSION/x86_64-linux/bin
+chmod 777 .phantomjs/$PHANTOM_JS_VERSION/x86_64-linux/bin
 ln -s /phantomjs-$PHANTOM_JS_VERSION/bin/phantomjs .phantomjs/$PHANTOM_JS_VERSION/x86_64-linux/bin/phantomjs
 
 cp config/database.yml.example config/database.yml
