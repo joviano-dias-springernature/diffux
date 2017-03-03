@@ -18,6 +18,7 @@ gem 'binding_of_caller'
 gem 'flamegraph'
 gem 'spring'
 gem 'sqlite3'
+gem 'phantomjs'
 
 group :assets do
   gem 'autoprefixer-rails'

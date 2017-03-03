@@ -301,6 +301,7 @@ DEPENDENCIES
   mocha
   paperclip
   pg
+  phantomjs
   poltergeist
   rails (= 4.2.1)
   rails-i18n (~> 4.0.0)
