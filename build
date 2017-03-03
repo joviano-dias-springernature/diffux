@@ -3,4 +3,5 @@ bundle install
 export DISPLAY=:99
 sudo /etc/init.d/xvfb start >/dev/null 2>&1 || true
 
-sudo phantomjs -v
+cp config/database.yml.example config/database.yml
+bundle exec rake db:setup
