@@ -4,4 +4,3 @@ export DISPLAY=:99
 sudo /etc/init.d/xvfb start >/dev/null 2>&1 || true
 
 sudo phantomjs -v
-sudo service postgresql start
