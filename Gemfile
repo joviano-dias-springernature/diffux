@@ -5,7 +5,7 @@ ruby File.read(".ruby-version").strip
 gem 'rails', '4.2.1'
 
 gem 'bootstrap-sass', '~> 3.3.0'
-gem 'diffux-core'
+gem 'diffux-core', git: 'https://diffux-user:password101@github.com/springernature/diffux-core.git'
 gem 'haml-rails'
 gem 'paperclip'
 gem 'pg'
