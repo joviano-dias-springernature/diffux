@@ -1,7 +1,4 @@
 ci-server-host: te-prod-go-01.springer-sbm.com
-dashboards:
-  grafana:
-  - ''
 environment-groups:
 - name: dev
   cf-diego-enabled: true
